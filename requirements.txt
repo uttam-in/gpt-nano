@@ -1,0 +1,18 @@
+# Core deep learning
+torch>=2.6            # works on Apple Silicon (MPS) and NVIDIA (CUDA) with the same code
+numpy>=1.26
+
+# Tokenizer training + Hugging Face ecosystem
+tokenizers>=0.20      # fast BPE tokenizer training (Rust-backed)
+transformers>=4.46    # load/export models in Hugging Face format
+datasets>=3.0         # streaming download of training text
+huggingface_hub>=0.26 # push the model to the Hub
+
+# Utilities
+tqdm>=4.66            # progress bars
+
+# Chat interface
+gradio>=5.0           # web chat UI (stage 5)
+
+# Tool calling / MCP (stage 4)
+mcp>=1.2              # official Model Context Protocol SDK
