@@ -64,7 +64,6 @@ def build_ui(chat: ChatModel, use_tools: bool, temperature: float, top_k: int, m
     title = "gpt-nano chat" + (" (with tools)" if use_tools else "")
     demo = gr.ChatInterface(
         fn=respond,
-        type="messages",
         title=title,
         description="A small GPT trained from scratch. Answers are simple by design.",
         examples=(
